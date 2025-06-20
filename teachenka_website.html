@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lenka Novotná | Teachenka</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-white text-gray-800 font-sans">
+  <!-- Navigation -->
+  <nav class="bg-white border-b shadow-sm fixed top-0 left-0 right-0 z-50">
+    <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
+      <span class="font-bold text-xl">Teachenka</span>
+      <div class="space-x-4 hidden md:block">
+        <a href="#about" class="hover:text-blue-600">O mně</a>
+        <a href="#services" class="hover:text-blue-600">Služby</a>
+        <a href="#pricing" class="hover:text-blue-600">Ceník</a>
+        <a href="#contact" class="hover:text-blue-600">Kontakt</a>
+      </div>
+    </div>
+  </nav>
+
+  <div class="pt-24">
+    <!-- Hero Section -->
+    <section class="bg-blue-100 py-20 text-center">
+      <img src="https://api.dicebear.com/7.x/thumbs/svg?seed=Teachenka" alt="Avatar Lenky" class="mx-auto w-32 h-32 rounded-full mb-4">
+      <h1 class="text-4xl font-bold">Lenka Novotná</h1>
+      <p class="text-xl text-gray-600">Friendly English tutor a.k.a. <strong>Teachenka</strong></p>
+      <a href="#contact" class="mt-6 inline-block px-6 py-3 bg-blue-500 text-white rounded-xl shadow hover:bg-blue-600 transition">Book Your First Lesson</a>
+      <div class="mt-4">
+        <button onclick="setLang('cs')" class="px-4 py-2 text-sm rounded bg-gray-200 hover:bg-gray-300 mr-2">🇨🇿 Česky</button>
+        <button onclick="setLang('en')" class="px-4 py-2 text-sm rounded bg-gray-200 hover:bg-gray-300">🇬🇧 English</button>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="max-w-4xl mx-auto px-6 py-16">
+      <h2 class="text-3xl font-semibold mb-6">O mně / About Me</h2>
+      <p class="text-lg mb-4 lang-cs">
+        Jsem lektorka angličtiny s více než 15letou praxí. Učím online i offline, děti i dospělé, začátečníky i pokročilé. 
+        Věřím v přátelský a individuální přístup ke každému studentovi. Lekce jsou zábavné, praktické a přizpůsobené vašim potřebám.
+      </p>
+      <p class="text-lg lang-en hidden">
+        I’m an experienced English tutor with over 15 years of teaching. My lessons are tailored to each student, friendly, and fun. Let's speak English with confidence!
+      </p>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="bg-gray-100 py-16 px-6">
+      <div class="max-w-4xl mx-auto">
+        <h2 class="text-3xl font-semibold mb-6">Nabízím / What I Offer</h2>
+        <ul class="grid md:grid-cols-2 gap-6 text-lg">
+          <li>✅ Individuální lekce / 1-on-1 Lessons</li>
+          <li>🎓 Příprava na zkoušky (FCE, maturita...)</li>
+          <li>🗣️ Konverzace / Conversation Practice</li>
+          <li>🏢 Firemní výuka / Business English</li>
+          <li>💻 Online výuka / Online Classes</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="py-16 px-6 max-w-4xl mx-auto">
+      <h2 class="text-3xl font-semibold mb-6">Reference / Testimonials</h2>
+      <div class="space-y-6">
+        <blockquote class="border-l-4 pl-4 italic text-gray-700">"Lekce s Lenkou jsou vždy zábavné a motivující. Cítím se jistější v mluvení!" – Petra</blockquote>
+        <blockquote class="border-l-4 pl-4 italic text-gray-700">"Lenka is a fantastic teacher – clear, supportive, and very friendly." – John</blockquote>
+      </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="bg-blue-50 py-16 px-6">
+      <div class="max-w-4xl mx-auto text-center">
+        <h2 class="text-3xl font-semibold mb-6">Ceník / Pricing</h2>
+        <p class="text-lg mb-4">✔️ 60 min individuální lekce: <strong>500 Kč</strong><br>✔️ Balíček 5 lekcí: <strong>2 300 Kč</strong><br>✔️ Firemní výuka: dle dohody</p>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 px-6 max-w-2xl mx-auto text-center">
+      <h2 class="text-3xl font-semibold mb-6">Kontakt / Contact</h2>
+      <p class="mb-4">Napiš mi na <a href="mailto:lenka@teachenka.cz" class="text-blue-600 underline">lenka@teachenka.cz</a></p>
+      <form class="space-y-4 mb-10">
+        <input type="text" placeholder="Your Name" class="w-full p-3 border rounded-xl">
+        <input type="email" placeholder="Your Email" class="w-full p-3 border rounded-xl">
+        <textarea placeholder="Your Message" rows="4" class="w-full p-3 border rounded-xl"></textarea>
+        <button type="submit" class="px-6 py-3 bg-blue-500 text-white rounded-xl shadow hover:bg-blue-600">Send Message</button>
+      </form>
+
+      <!-- Calendly Embed -->
+      <div class="mt-8">
+        <h3 class="text-2xl font-semibold mb-4">Rezervuj si lekci / Book a Lesson</h3>
+        <iframe src="https://calendly.com/teachenka/lesson" width="100%" height="600" frameborder="0"></iframe>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-200 text-center py-6 text-sm text-gray-600">
+      © 2025 Lenka Novotná | Teachenka. All rights reserved.
+    </footer>
+  </div>
+
+  <!-- Script for language switching -->
+  <script>
+    function setLang(lang) {
+      document.querySelectorAll('.lang-cs').forEach(el => el.style.display = lang === 'cs' ? 'block' : 'none');
+      document.querySelectorAll('.lang-en').forEach(el => el.style.display = lang === 'en' ? 'block' : 'none');
+    }
+    // Default to Czech
+    setLang('cs');
+  </script>
+</body>
+</html>
